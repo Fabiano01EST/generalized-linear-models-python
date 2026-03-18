@@ -1,7 +1,3 @@
-Aqui está o README no **mesmo estilo**, adaptado para **Regressão Logística** 👇
-
----
-
 # Análise de Acidentes de Trânsito com Regressão Logística
 
 ## Descrição do Projeto
@@ -69,5 +65,3 @@ Essa etapa permitiu avaliar a capacidade preditiva do modelo e verificar a consi
 Este projeto possui caráter aplicado, com foco na utilização de métodos estatísticos para análise de dados reais. A abordagem adotada permite identificar fatores associados à gravidade dos acidentes de trânsito e fornece uma base estruturada para aplicações futuras em problemas de classificação.
 
 ---
-
-Se quiser, posso também fazer uma **versão ainda mais alinhada com GLM (binomial)** ou deixar no mesmo padrão exato de nomes de arquivos do seu repositório 👍
