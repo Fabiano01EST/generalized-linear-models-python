@@ -1,7 +1,7 @@
 import json
 import re
 
-with open('GLM2.ipynb', 'r', encoding='utf-8') as f:
+with open('Gamma_model.ipynb', 'r', encoding='utf-8') as f:
     nb = json.load(f)
 
 html_parts = []
