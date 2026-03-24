@@ -1,21 +1,18 @@
-# Análise de Acidentes de Trânsito com Regressão Logística
+# Análise de Dados de Energia Sustentável com Modelo Gamma
 
 ## Descrição do Projeto
 
-Este repositório apresenta a aplicação do modelo de Regressão Logística para análise de dados de acidentes de trânsito. O estudo foi desenvolvido com o objetivo de explorar padrões nos dados, identificar relações entre variáveis e realizar a classificação da gravidade dos acidentes a partir das características observadas.
+Este repositório apresenta a aplicação de um modelo estatístico para análise de dados globais relacionados à energia sustentável. O estudo foi desenvolvido a partir de um conjunto de dados público, com o objetivo de explorar padrões, identificar relações entre variáveis e ajustar um modelo capaz de descrever adequadamente o comportamento da variável de interesse.
 
 A implementação completa da análise está disponível no notebook:
-👉 [https://github.com/Fabiano01EST/generalized-linear-models/blob/main/logistic_model.ipynb](https://github.com/Fabiano01EST/generalized-linear-models/blob/main/GLM2.ipynb)
-
----
+👉 [https://github.com/Fabiano01EST/generalized-linear-models/blob/main/Gamma_model.ipynb](https://github.com/Fabiano01EST/generalized-linear-models/blob/main/Gamma_model.ipynb)
 
 ## Base de Dados
 
-Os dados utilizados correspondem a registros de acidentes de trânsito, contendo informações sobre características dos envolvidos, condições do acidente e variáveis associadas à severidade.
+Os dados utilizados são provenientes do seguinte repositório:
+👉 [https://www.kaggle.com/datasets/anshtanwar/global-data-on-sustainable-energy](https://www.kaggle.com/datasets/anshtanwar/global-data-on-sustainable-energy)
 
-O conjunto de dados reúne variáveis como idade, sexo, tipo de envolvido, tipo de acidente e outras características relevantes, permitindo analisar fatores associados à classificação dos acidentes.
-
----
+O conjunto de dados reúne informações de diversos países ao longo dos anos, contemplando indicadores associados ao contexto energético e ambiental. Entre as variáveis disponíveis, destacam-se medidas relacionadas ao consumo de energia, emissões, acesso à eletricidade e uso de fontes renováveis.
 
 ## Estrutura da Análise
 
@@ -27,41 +24,36 @@ Inicialmente, foi realizada a organização da base, incluindo:
 
 * Tratamento de valores ausentes;
 * Ajuste de tipos das variáveis;
-* Codificação de variáveis categóricas;
-* Padronização dos dados para aplicação do modelo.
+* Padronização de formatos para viabilizar a modelagem.
 
 ### 2. Análise Exploratória
 
-Na etapa exploratória, foram utilizadas medidas descritivas e visualizações gráficas com o objetivo de compreender o comportamento das variáveis e a distribuição das classes.
+Na etapa exploratória, foram utilizadas medidas descritivas e visualizações gráficas para compreender o comportamento das variáveis.
 
-Essa etapa permitiu identificar possíveis padrões e desequilíbrios entre categorias, contribuindo para uma melhor compreensão do problema de classificação.
+Adicionalmente, foi construída uma matriz de correlação de Spearman, com o objetivo de identificar associações entre os preditores e a variável resposta. Essa matriz tem como principal característica **descrever as relações observadas nos dados**, permitindo evidenciar padrões relevantes e auxiliar na escolha das variáveis utilizadas no modelo.
 
 ### 3. Modelagem
 
-A modelagem foi realizada utilizando o modelo de Regressão Logística, apropriado para problemas de classificação. O modelo foi ajustado a partir de um conjunto de treinamento, considerando variáveis explicativas selecionadas com base na análise exploratória.
+A modelagem foi realizada utilizando um modelo Gamma, considerando a natureza da variável resposta. Foram selecionadas variáveis explicativas com base nos padrões identificados na análise exploratória.
 
-O ajuste foi conduzido buscando representar adequadamente a relação entre as características observadas e a probabilidade de ocorrência das classes da variável resposta.
+O ajuste do modelo foi conduzido diretamente sobre a base tratada, buscando representar de forma adequada a relação entre a variável de interesse e os fatores explicativos.
 
 ### 4. Avaliação
 
-Após o ajuste do modelo, foram analisados:
+Após o ajuste, foram analisados:
 
-* A matriz de confusão;
-* Métricas de desempenho, como acurácia;
-* O comportamento das probabilidades estimadas.
+* Os coeficientes estimados;
+* O comportamento dos resíduos;
+* A consistência geral do modelo em relação aos dados observados.
 
-Essa etapa permitiu avaliar a capacidade preditiva do modelo e verificar a consistência das classificações realizadas.
-
----
+Essa etapa permitiu verificar a qualidade do ajuste e a adequação da especificação adotada.
 
 ## Organização do Repositório
 
-* `GLM2.ipynb`: contém toda a implementação da análise, incluindo preparação dos dados, modelagem e avaliação dos resultados.
-
----
+* `Gamma_model.ipynb`: contém toda a implementação da análise, desde o tratamento dos dados até a modelagem e avaliação dos resultados.
 
 ## Considerações
 
-Este projeto possui caráter aplicado, com foco na utilização de métodos estatísticos para análise de dados reais. A abordagem adotada permite identificar fatores associados à gravidade dos acidentes de trânsito e fornece uma base estruturada para aplicações futuras em problemas de classificação.
+Este projeto tem caráter aplicado, com foco na exploração e modelagem de dados reais. A abordagem adotada permite identificar padrões relevantes no contexto da energia sustentável e fornece uma base estruturada para análises futuras com dados de natureza semelhante.
 
 ---
